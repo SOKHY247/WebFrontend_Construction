@@ -209,7 +209,7 @@ function HomePage() {
       </section>
 
     
-      <div className="w-full">
+      <div className="min-w-full ">
         <div className="overflow-hidden">
           <img
             src="https://infoera.md/storage/321/VanSchendel-Construction.jpg"
