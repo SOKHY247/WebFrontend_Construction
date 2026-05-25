@@ -208,7 +208,6 @@ function HomePage() {
         </div>
       </section>
 
-    
       <div className="min-w-full ">
         <div className="overflow-hidden">
           <img

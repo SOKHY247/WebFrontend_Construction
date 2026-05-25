@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Lora:ital,wght@0,400..700;1,400..700&family=Metal&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @keyframes zoomIn {
   from { transform: scale(1); }
   to   { transform: scale(1.1); }
@@ -21,4 +23,14 @@
 
 .animate-scroll-left {
   animation: scrollLeft 20s linear infinite;
+}
+@font-face {
+  font-family: 'Courier New', Courier, monospace;
+  src : url("./assets/fonts/OpenSans-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@theme{
+  --font-doto : Doto, "sans serif";
+  -
 }
