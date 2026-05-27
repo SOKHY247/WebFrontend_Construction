@@ -2,12 +2,15 @@ import { useState, useEffect, useRef } from "react";
 import { useTheme } from '../context/ThemeContext';
 import { Link, NavLink } from "react-router-dom";
 import logoImg from '../assets/logo_1.jpg';
+import Profile from '../assets/Profile.png';
 
 const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about" },
   { label: "Contact Us", to: "/contact" },
   { label: "Our Service", to: "/services" },
+  { label: "Products", to: "/products" },
+  { label: "Blogs", to: "/blog" },
 ];
 
 export default function Navbar() {
@@ -41,7 +44,7 @@ export default function Navbar() {
         </Link>
 
         {/* Nav Links */}
-        <nav className="hidden md:flex items-center gap-8 ">
+        <nav className="hidden md:flex-row items-center gap-8 sm:flex-col xl:flex">
           {NAV_LINKS.map((l) => (
             <NavLink
               key={l.label}
@@ -83,7 +86,8 @@ export default function Navbar() {
           </button>
 
           {/* Profile dropdown */}
-          <div className="relative" ref={profileRef}>
+          <div className="relative" ref={profileRef}
+          src={Profile}>
             <button
               onClick={() => setProfileOpen(!profileOpen)}
               className="flex items-center gap-2 p-1 rounded-full hover:ring-2 hover:ring-green-500 transition"
@@ -107,7 +111,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="xl:hidden  p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
             </svg>
@@ -117,7 +121,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-700 px-6 py-4 flex flex-col gap-4">
+        <div className="xl:hidden  bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-700 px-6 py-4 flex flex-col gap-4">
           {NAV_LINKS.map((l) => (
             <Link key={l.label} to={l.to} className="text-sm text-gray-700 dark:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>
               {l.label}

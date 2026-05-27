@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Lora:ital,wght@0,400..700;1,400..700&family=Metal&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
-
-@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Lora:ital,wght@0,400..700;1,400..700&family=Metal&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @keyframes zoomIn {
   from { transform: scale(1); }
@@ -32,5 +31,4 @@
 }
 @theme{
   --font-doto : Doto, "sans serif";
-  -
 }

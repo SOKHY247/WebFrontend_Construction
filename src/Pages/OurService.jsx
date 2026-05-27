@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-
+// import Test from "../Pages/Test";
 function SectionLabel({ children }) {
   return (
     <p className="text-xs uppercase tracking-[0.2em] text-green-600 font-bold mb-2">
@@ -13,7 +13,7 @@ function SectionLabel({ children }) {
     {
       id: 1,
       url : "https://img.magnific.com/free-photo/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus_1418-474.jpg?semt=ais_hybrid&w=740&q=80",
-      desc : "'Experience the serenity of the peaks.",
+      desc : "'Experience the serenity of the peaks.it live the modern life in the local.",
       stye : 'card'
     },
     {
@@ -123,7 +123,7 @@ function OurService() {
         </div>
 
               {/* 3 imaeg have text belove */}
-      <div className="mt-15 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 py-16 sm:py-20 lg:py-35">
+      <div className="mt-10 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 py-16 sm:py-20 lg:py-35 bg-gray-100">
           <div className="max-w-screen-2xl mx-auto text-gray-300">
             <div className="text-center mb-12 sm:16">
             <p className="text-xs uppercase tracking-[0.2em] text-green-600 font-bold mb-2">
@@ -133,7 +133,7 @@ function OurService() {
               Feature Project
             </h2>
             </div>
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="max-w-10xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 ">
 
               {/* 1. Standard Card Design */}
               <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
@@ -144,32 +144,33 @@ function OurService() {
                 </div>
               </div>
 
-              {/* 2. Full Gradient Overlay */}
-              <div className="relative group rounded-xl overflow-hidden shadow-lg cursor-pointer">
-                <img src={images[1].url} alt="Coast" className="w-full h-full min-h-[300px] object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold text-white">{images[1].title}</h3>
-                  <p className="text-gray-200 text-sm">{images[1].desc}</p>
+                {/* 1. Standard Card Design */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                <img src={images[0].url} alt="Construction" className="max-w-full h-100 object-cover" />
+                <div className="p-5">
+                  <h3 className="text-xl font-bold text-gray-800">{images[0].title}</h3>
+                  <p className="text-gray-600 mt-2">{images[0].desc}</p>
                 </div>
               </div>
 
-              {/* 3. Hover Slide-up Reveal */}
-              <div className="relative overflow-hidden rounded-xl shadow-lg group bg-black">
-                <img 
-                  src={images[2].url} 
-                  alt="Forest" 
-                  className="w-full h-full min-h-[300px] object-cover group-hover:scale-110 group-hover:opacity-75 transition-all duration-500" 
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-white/90 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <h3 className="text-lg font-bold text-gray-900">{images[2].title}</h3>
-                  <p className="text-sm text-gray-700 font-medium">View Details →</p>
+                {/* 1. Standard Card Design */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                <img src={images[0].url} alt="Construction" className="max-w-full h-100 object-cover" />
+                <div className="p-5">
+                  <h3 className="text-xl font-bold text-gray-800">{images[0].title}</h3>
+                  <p className="text-gray-600 mt-2">{images[0].desc}</p>
                 </div>
               </div>
 
             </div>
           </div>
-                </div>
+        </div>
+        
       </section>
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 py-16 sm:py-20 lg:py-28">
+        {/* <Test/> */}
+      </div>
+      
   </div>
   )
 }

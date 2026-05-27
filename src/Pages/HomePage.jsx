@@ -136,7 +136,7 @@ function HomePage() {
               {/* Stats */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 {STATS.map((s) => (
-                  <div key={s.label} className="flex flex-col gap-1 pt-4">
+                  <div key={s.label} className="flex flex-col gap-1 pt-4 items-center m-10">
                     <CountUp target={s.target} suffix={s.suffix} />
                     <p className="text-sm text-gray-500 dark:text-gray-400 leading-snug">{s.label}</p>
                   </div>
