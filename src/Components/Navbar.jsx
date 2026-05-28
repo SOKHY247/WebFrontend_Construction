@@ -87,13 +87,15 @@ export default function Navbar() {
 
           {/* Profile dropdown */}
           <div className="relative" ref={profileRef}
-          src={Profile}>
+          >
             <button
               onClick={() => setProfileOpen(!profileOpen)}
-              className="flex items-center gap-2 p-1 rounded-full hover:ring-2 hover:ring-green-500 transition"
+              className="flex items-center gap-2 p-1 rounded-full hover:ring-2 hover:ring-blue-200 transition"
             >
-              <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white text-sm font-bold">
-                U
+              <div className="w-8 h-8 rounded-ful flex items-center justify-center text-white text-sm font-bold">
+                <img src={Profile}
+                className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </button>
 

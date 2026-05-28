@@ -46,6 +46,8 @@ const SERVICE_CARDS = [
   { src: "https://infoera.md/storage/321/VanSchendel-Construction.jpg", label: "Commercial", title: "Commercial Build", text: "Large-scale commercial construction delivered on time and on budget." },
   { src: "https://infoera.md/storage/321/VanSchendel-Construction.jpg", label: "Infrastructure", title: "Civil Works", text: "Public infrastructure built to meet the needs of growing communities." },
   { src: "https://infoera.md/storage/321/VanSchendel-Construction.jpg", label: "Renovation", title: "Restoration", text: "Expert renovation and restoration to modernise or preserve your space." },
+  { src: "https://infoera.md/storage/321/VanSchendel-Construction.jpg", label: "Renovation", title: "Restoration", text: "Expert renovation and restoration to modernise or preserve your space." },
+  { src: "https://infoera.md/storage/321/VanSchendel-Construction.jpg", label: "Renovation", title: "Restoration", text: "Expert renovation and restoration to modernise or preserve your space." },
 ];
 
 const REVIEWS = [
@@ -229,14 +231,14 @@ function HomePage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8 ">
             {SERVICE_CARDS.map((item, index) => (
               <div key={index} className="group flex flex-col gap-4">
-                <div className="overflow-hidden rounded-xl shadow-lg">
+                <div className="overflow-hidden rounded-xl shadow-lg ">
                   <img
                     src={item.src}
                     alt={item.title}
-                    className="w-full h-52 sm:h-60 lg:h-64 xl:h-56 2xl:h-64 object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer"
+                    className="w-full h-250 max-h-screen sm:h-60 lg:h-64 xl:h-56 2xl:h-64 object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer mt-4"
                   />
                 </div>
                 <SectionLabel>{item.label}</SectionLabel>
