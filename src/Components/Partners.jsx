@@ -1,14 +1,20 @@
 import logo1 from "../assets/logo_1.jpg";
 import logo2 from "../assets/logon_2.jpg";
+import Jepen_center from "../assets/Jepen_center.png";
+import Kfour from "../assets/Kfour-Group-Ltd.-1.jpg"
+import logo_hyyndai from "../assets/logo_hyyndai.png"
+import Center from "../assets/Center.png"
+import CamWens from "../assets/CamWens.png"
+import woori_back from "../assets/woori_back.png"
 
 const PARTNERS = [
   { logo: logo1 },
-  { logo: logo2 },
-  { logo: logo1 },
-  { logo: logo2 },
-  { logo: logo1 },
-  { logo: logo2 },
-  { logo: logo1 },
+  { logo: woori_back },
+  { logo: Jepen_center },
+  { logo: Kfour },
+  { logo: logo_hyyndai },
+  { logo: Center },
+  { logo: CamWens },
   { logo: logo2 },
 ];
 
