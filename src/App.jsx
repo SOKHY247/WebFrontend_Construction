@@ -7,6 +7,7 @@ import OurService from "./Pages/OurService";
 import Navbar from "./Components/Navbar.jsx";
 import Hero from "./Components/Hero.jsx";
 import Partners from "./Components/Partners.jsx";
+import ServiceDetail from "./Pages/Services_Detail.jsx";
 import './App.css';
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUS />} />
             <Route path="/services" element={<OurService />} />
+            <Route path="/service_detail" element={<ServiceDetail/>}/>
             <Route path="*" element={<h1 className="text-center py-20 text-2xl items-center mt-5">404 Not Found</h1>} />
           </Routes>
         </BrowserRouter>
